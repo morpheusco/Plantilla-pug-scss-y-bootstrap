@@ -1,3 +1,92 @@
-body {
-  color:red;
+// Mi fuente de google fonts 
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;700&family=Noto+Sans:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500&display=swap');
+
+// Aquí las funciones de sass que trae bootstrap // En el archivo Custom.scss
+// Option B: Incluyendo bootstrap por partes.
+
+// 1. Incluye las funciones primero (para que puedas manipular colores, SVG, calc, etc.)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Incluye cualquier sobrescritura de variable predeterminada aquí
+
+// Sobre escribiendo los valores por defecto
+$body-bg: #d7f0fd;
+$body-color: #111;
+
+// Configurando la fuente por defecto del texto en general de bootstrap
+$font-family-sans-serif: 'Noto Sans', sans-serif !important;
+
+// Configurando una segunda fuente para que sea la de la marca
+$font-family-marca: 'Edu TAS Beginner', cursive !important;
+
+// Creando mis propios colores de la marca
+$marca: rgb(10, 187, 152);
+$marca--claro: rgb(108, 255, 226);
+$marca--oscuro: rgb(8, 82, 67);
+
+// crear su propio sistema de color 
+$custom-colors: (
+  "marca": $marca,
+  "marca--claro": $marca--claro,
+  "marca--oscuro" : $marca--oscuro
+);
+
+// 3. Incluye el resto de las hojas de estilo Bootstrap requeridas
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Incluye cualquier sobrescritura de mapa predeterminado aquí
+
+// Merge the maps - si es que es necesario para generar otros elementos.
+
+$theme-colors: (
+  "primary":          $primary,
+  "secondary":        $secondary,
+  "success":          $success,
+  "info":             $info,
+  "warning":          $warning,
+  "danger":           $danger,
+  "light":            $light,
+  "dark":             $dark, 
+  "marca":            $marca, 
+  "marca--claro":     $marca--claro, 
+  "marca--oscuro":    $marca--oscuro
+);
+// De esta manera se generan los nuevos colores personalizados y los colores del theme (son diferentes)
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// 5. Incluye el resto de las partes requeridas
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// 6. Opcionalmente, incluye otras partes según sea necesario
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+
+// 7. Opcionalmente, incluye la API de utilidades en último lugar para generar clases basadas en el mapa Sass en `_utilities.scss`
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// 8. Agrega código personalizado adicional aquí
+
+
+// Incluir el bootstrap normalito para que procese mis cambios
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Agregando lo último que requiera específico ej, sobre escribir el texto del botón claro de la marca
+// Se puede adicionar el parámetro important, funciona mejor.
+.btn-marca {
+  color: rgb(171, 25, 5) !important;
+}
+.btn-marca--oscuro {
+  font-family: $font-family-marca;
+  font-weight: bold;
+}
+.text-marca {
+  font-family: $font-family-marca;
 }

@@ -8,13 +8,60 @@
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
-    <h1>Texto desde pug</h1>
-    <h2>nivel 2</h2>
-    <h3>nivel 3</h3>
-    <h4>nivel 4 </h4>
-    <h5>nivel 5</h5>
-    <h6>nivel 6</h6>
-    <p>Esto es un párrafo</p>
-    <p>Otro párrafo </p>
+    <div class="container">
+      <h1>Texto desde pug</h1>
+      <h2 class="text-marca">nivel 2 con fuente de la casa</h2>
+      <h3>nivel 3</h3>
+      <h4>nivel 4 </h4>
+      <h5>nivel 5</h5>
+      <h6>nivel 6</h6>
+      <p>Esto es un párrafo</p>
+      <p>Otro párrafo adicional </p>
+      <p class="text-marca">Este es un texto con el color de la marca </p>
+      <button class="btn btn-primary" type="button">Boton primario </button>
+      <button class="btn btn-secondary" type="button">Boton Secondary </button>
+      <button class="btn btn-success" type="button">Boton Success </button>
+      <button class="btn btn-danger" type="button">Boton Danger </button>
+      <button class="btn btn-warning" type="button">Boton Warning </button>
+      <button class="btn btn-info" type="button">Boton Info </button>
+      <button class="btn btn-light" type="button">Boton light </button>
+      <button class="btn btn-dark" type="button">Boton dark </button>
+      <button class="btn btn-link" type="button">Boton link </button>
+      <div class="mt-5"> 
+        <button class="btn btn-marca--claro" type="button">Boton Marca claro</button>
+        <button class="btn btn-marca--oscuro" type="button">Boton Marca oscuro </button>
+        <button class="btn btn-marca" type="button">Boton Marca </button>
+      </div>
+      <div class="mt-5"> 
+        <div class="card text-bg-primary mb-3">
+          <div class="card-header">Header </div>
+          <div class="card-body"> 
+            <h2 class="card-title">Título de la card primaria</h2>
+            <p>Algún texto que tendría la card </p>
+          </div>
+        </div>
+        <div class="card text-bg-marca mb-3">
+          <div class="card-header">Header </div>
+          <div class="card-body"> 
+            <h2 class="card-title">Título de la card marca</h2>
+            <p>Algún texto que tendría la card             </p>
+          </div>
+        </div>
+        <div class="card text-bg-marca--claro mb-3">
+          <div class="card-header">Header </div>
+          <div class="card-body"> 
+            <h2 class="card-title">Título de la card marca claro</h2>
+            <p>Algún texto que tendría la card   </p>
+          </div>
+        </div>
+        <div class="card text-bg-marca--oscuro mb-3">
+          <div class="card-header">Header </div>
+          <div class="card-body"> 
+            <h2 class="card-title">Título de la card marca oscuro</h2>
+            <p>Algún texto que tendría la card               </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

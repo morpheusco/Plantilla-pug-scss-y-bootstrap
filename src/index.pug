@@ -7,11 +7,50 @@ html(lang="es")
     meta(charset="UTF-8")
     link(rel="stylesheet", href="css/estilos.css")
   body
-    h1 Texto desde pug
-    h2 nivel 2
-    h3 nivel 3
-    h4 nivel 4 
-    h5 nivel 5
-    h6 nivel 6
-    p Esto es un párrafo
-    p Otro párrafo 
+    .container
+      h1 Texto desde pug
+      h2.text-marca nivel 2 con fuente de la casa
+      h3 nivel 3
+      h4 nivel 4 
+      h5 nivel 5
+      h6 nivel 6
+      p Esto es un párrafo
+      p Otro párrafo adicional 
+      p.text-marca Este es un texto con el color de la marca 
+      button(type="button" class="btn btn-primary") Boton primario 
+      button(type="button" class="btn btn-secondary") Boton Secondary 
+      button(type="button" class="btn btn-success") Boton Success 
+      button(type="button" class="btn btn-danger") Boton Danger 
+      button(type="button" class="btn btn-warning") Boton Warning 
+      button(type="button" class="btn btn-info") Boton Info 
+      button(type="button" class="btn btn-light") Boton light 
+      button(type="button" class="btn btn-dark") Boton dark 
+      button(type="button" class="btn btn-link") Boton link 
+      .mt-5 
+        button(type="button" class="btn btn-marca--claro") Boton Marca claro
+        button(type="button" class="btn btn-marca--oscuro") Boton Marca oscuro 
+        button(type="button" class="btn btn-marca") Boton Marca 
+      .mt-5 
+        .card.text-bg-primary.mb-3
+          .card-header Header 
+          .card-body 
+            h2.card-title Título de la card primaria
+            p Algún texto que tendría la card 
+        .card.text-bg-marca.mb-3
+          .card-header Header 
+          .card-body 
+            h2.card-title Título de la card marca
+            p Algún texto que tendría la card             
+        .card.text-bg-marca--claro.mb-3
+          .card-header Header 
+          .card-body 
+            h2.card-title Título de la card marca claro
+            p Algún texto que tendría la card   
+        .card.text-bg-marca--oscuro.mb-3
+          .card-header Header 
+          .card-body 
+            h2.card-title Título de la card marca oscuro
+            p Algún texto que tendría la card               
+      
+
+    
