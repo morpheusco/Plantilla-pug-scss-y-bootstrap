@@ -4,8 +4,8 @@
   "description": "Plantilla base para mockups futuros",
   "source": "src/index.pug",
   "scripts": {
-    "EscuchaPug" : "pug src -o dist -P -w", 
-    "EscuchaSass" : "sass --watch src/scss/custom.scss dist/css/estilos.css"
+    "vigila-Pug" : "pug src -o dist -P -w", 
+    "vigila-Sass" : "sass --watch src/scss/custom.scss dist/css/estilos.css"
   },
   "keywords": [],
   "author": "Edison Monsalve",
