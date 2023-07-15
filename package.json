@@ -1,14 +1,14 @@
 {
-  "name": "test1",
+  "name": "plantilla-pug-css-y-bootstrap",
   "version": "1.0.0",
-  "description": "",
+  "description": "Plantilla base para mockups futuros",
   "source": "src/index.pug",
   "scripts": {
     "EscuchaPug" : "pug src -o dist -P -w", 
     "EscuchaSass" : "sass --watch src/scss/custom.scss dist/css/estilos.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Edison Monsalve",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.0",
