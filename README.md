@@ -7,4 +7,4 @@ Se relaciona un custom para importar las herramientas de Bootstrap, ejemplos de 
 ## Integración a pug
 Se ha generado la integración con pug de manera básica, pero se estima que tendrá mixins y partials creado de ejemplo, con un html base simple que sirva como guía.
 ## A futuro
-Espero poder integrar con un nano css o similar para minificar el css usado resultado de SASS
+Espero poder integrar con un nano css o similar para minificar el css usado resultado de SASS - Actualizado desde Vs Code
