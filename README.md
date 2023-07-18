@@ -6,8 +6,10 @@ Se inicia con Bootstrap, no se toca, se configurará con SASS
 Se relaciona un custom para importar las herramientas de Bootstrap, ejemplos de modificación de fuentes base, componentes creados y colores mapeados junto con un estilo simple de ejemplo y un estilo sobre escribiendo la salida de bootstrap de un componente.
 ## Integración a pug
 Se ha generado la integración con pug de manera básica, pero se estima que tendrá mixins y partials creado de ejemplo, con un html base simple que sirva como guía.
+## Uso de awesome font
+Debido a que en muchos casos purgecss no optimizará el uso de awesome font ya que este posee javascript que lo menciona y que si se optimiza posteriormente no se podrían usar íconos que no existan previamente, la mejor opción es incluir el paquete completo, al momento de este documento es la 6-4-0 free, decidí no usar el paquete para que se pueda reemplazar si se desea fácilmente.
 ## A futuro
-Espero poder integrar con un nano css o similar para minificar el css usado resultado de SASS - Actualizado desde Vs Code
+Integrar mixins y templates de pug, usar un empaquetador tipo Parcel y minificar tambien el JS, falta también integrar font awesome
 ## Comandos 
 En el archivo package.json existen por ahora estos comandos.
 ### Vigila-Pug
@@ -15,4 +17,4 @@ Este comando toma pug como comando cli , le dice que vigile la carpeta src y lo 
 ### Vigila-Sass
 También usa un comando cli o puede ser parte del proceso - junto con pug - y analiza los scss del directorio src y los lleva a estilos css, se queda vigilando con -w watch.
 ### LimpiaCss
-Toma purge como cli y como dependencia, se va a la carpeta dist/css/estilos.css (archivo que previamente entrega sass), vigila el contenido que está tipo html en la carpeta dist y de salid entrega un css optimizado en la carpeta dist/css/optimizado - no lo he puesto en modalidad watch, prefiero que se ejecute manualmente antes de empaquetar.
+Toma purge como cli y como dependencia, se va a la carpeta dist/css/estilos.css (archivo que previamente entrega sass), vigila el contenido que está tipo html en la carpeta dist y de salid entrega un css optimizado en la carpeta dist/css/optimizado - no lo he puesto en modalidad watch, prefiero que se ejecute manualmente antes de empaquetar, se debería cambiar la url del css en la hoja de Pug para posteriormente enlazar el archivo compactado.
