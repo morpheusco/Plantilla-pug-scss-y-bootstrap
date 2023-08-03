@@ -1,0 +1,12 @@
+extends ../componentes-pug/templates/template
+//- Traemos config pero lo sobre escribimos
+append config 
+  - page_title = "Inicio del sitio web"
+  - pagina_actual = "Inicio" 
+
+//- Ahora sobre escribimos el área de contenido generada en el template, el h1 ha sido colocado en el preheader
+block contenido
+  section.container
+    .row 
+      h2.text-center.mt-3 Demo de index <hr />
+      p Aquí va el párrafo de texto simple, no olvide personalizar todo, sass, pug, mixins, blocks, etc. 

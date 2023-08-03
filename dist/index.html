@@ -1,68 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Test con pug, sass y bootstrap</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/css/all.css">
+  <!-- Comentarios para html-->
+  <head> 
+    <meta charset="UTF-8"/>
+    <title>Inicio del sitio web | MiEmpresa</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="descripción de la página, si se desea cambiar se debería tener variables en el config">
+    <link rel="stylesheet" href="/dist/css/estilos.css">
+    <link rel="stylesheet" href="/dist/assets/fontawesome-free-6.4.0-web/css/all.css">
   </head>
-  <body>
-    <div class="container">
-      <h1 class="text-info">Texto desde pug con purge y awesome font<span class="fa fa-home fa-3x"></span></h1>
-      <h2 class="text-marca">nivel 2 con fuente de la casa y marca </h2>
-      <h3>nivel 3</h3>
-      <h4>nivel 4 </h4>
-      <h5>nivel 5</h5>
-      <h6>nivel 6</h6>
-      <p>Esto es un párrafo</p>
-      <p>Otro párrafo adicional </p>
-      <p class="text-marca">Este es un texto con el color de la marca </p>
-      <button class="btn btn-primary" type="button">Boton primario </button>
-      <button class="btn btn-secondary" type="button">Boton Secondary </button>
-      <button class="btn btn-success" type="button">Boton Success </button>
-      <button class="btn btn-danger" type="button">Boton Danger </button>
-      <button class="btn btn-warning" type="button">Boton Warning </button>
-      <button class="btn btn-info" type="button">Boton Info </button>
-      <button class="btn btn-light" type="button">Boton light </button>
-      <button class="btn btn-dark" type="button">Boton dark </button>
-      <button class="btn btn-link" type="button">Boton link </button>
-      <div class="mt-5"> 
-        <button class="btn btn-marca--claro" type="button">Boton Marca claro</button>
-        <button class="btn btn-marca--oscuro" type="button">Boton Marca oscuro </button>
-        <button class="btn btn-marca" type="button">Boton Marca </button>
-      </div>
-      <div class="mt-5"> 
-        <div class="card text-bg-primary mb-3">
-          <div class="card-header">Header </div>
-          <div class="card-body"> 
-            <h2 class="card-title">Título de la card primaria</h2>
-            <p>Algún texto que tendría la card </p>
+  <body> 
+    <header class="shadow">
+      <div class="container mt-1 mb-1">
+        <div class="row"> 
+          <div class="col-md-6">
+            <h1 class="h6 mt-1"> <small>El slogan bonito de la empresa </small></h1>
           </div>
-        </div>
-        <div class="card text-bg-marca mb-3">
-          <div class="card-header">Header </div>
-          <div class="card-body"> 
-            <h2 class="card-title">Título de la card marca</h2>
-            <p>Algún texto que tendría la card             </p>
-          </div>
-        </div>
-        <div class="card text-bg-marca--claro mb-3">
-          <div class="card-header">Header </div>
-          <div class="card-body"> 
-            <h2 class="card-title">Título de la card marca claro</h2>
-            <p>Algún texto que tendría la card   </p>
-          </div>
-        </div>
-        <div class="card text-bg-marca--oscuro mb-3">
-          <div class="card-header">Header </div>
-          <div class="card-body"> 
-            <h2 class="card-title">Título de la card marca oscuro</h2>
-            <p>Algún texto que tendría la card               </p>
+          <div class="col-md-3 mb-sm-2"> <a href="mailto:elemail@laempresa.com"><small> elemail@laempresa.com </small></a></div>
+          <div class="col-md-3">
+            <div class="form"> 
+              <div class="row">
+                <div class="col-8"> 
+                  <input class="form-control form-control-sm me-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                </div>
+                <div class="col-4"> 
+                  <button class="btn btn-outline-secondary form-control-sm me-sm-2 my-sm-0" type="submit" value="Buscar en la web" name="buscador" aria-label="Buscar" id="btn_buscador" alt="Buscador"><span alt="Boton buscador" class="fa fa-search"> </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container"><a class="navbar" href="index.html" title="Ir al inicio del sitio"> <img class="img-fluid" src="/dist/assets/img/logo.svg" style="height: 44px;" alt="Logo de la empresa"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="navbar-collapse collapse" id="menu-principal">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La empresa  </a>
+                <ul class="dropdown-menu" aria-labelledy="navbarDropdown">
+                  <li><a class="dropdown-item" href="quienes.html" title="Ir al menú desplegable 1">Quienes somos </a></li>
+                  <li> <a class="dropdown-item" href="equipo.html" title="Ir al menú desplegable 2">Nuestro equipo </a></li>
+                </ul>
+              </li>
+              <li class="nav-item active"><a class="nav-link" href="pagina1.html" title="Ir al sitio no. 1">Página1  <span class="sr-only"> (Actual) </span></a></li>
+              <li class="nav-item"><a class="nav-link" href="pagina2.html" title="Ir al sitio no. 2">Página2 </a></li>
+              <li class="nav-item"><a class="nav-link" href="pagina3.html" title="Ir al sitio no. 3">Página3 </a></li>
+              <li class="nav-item"><a class="nav-link" href="pagina4.html" title="Ir al sitio no. 4">Página4</a></li>
+              <li class="nav-item"><a class="nav-link" href="pagina5.html" title="Ir al sitio no. 5">Página5</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.google.com" title="Ir al sitio externo">Link externo</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main> 
+    </main>
+    <section> 
+      <section class="container">
+        <div class="row"> 
+          <h2 class="text-center mt-3">Demo de index <hr /></h2>
+          <p>Aquí va el párrafo de texto simple, no olvide personalizar todo, sass, pug, mixins, blocks, etc. </p>
+        </div>
+      </section>
+    </section>
+    <footer class="container-fluid text-white">
+      <div class="row"> 
+        <div class="col p3 bg-dark">
+          <div class="row">
+            <div class="col-md-2 offset-lg-1">
+              <p class="lead">Dirección 1 </p>
+              <div class="address">Ed. Bogotá  <br> Bogotá D.C Colombia  <br> Tel: +57 (1) 123 45678  <br> Código Postal 110010 <br></div>
+            </div>
+            <div class="col-md-2"> 
+              <p class="lead">Dirección 2</p>
+              <div class="address">Ed. Bogotá  <br> Bogotá D.C Colombia  <br> Tel: +57 (1) 123 45678  <br> Código Postal 110010 <br></div>
+            </div>
+            <div class="col-md-2"> 
+              <p class="lead">Dirección 3 </p>
+              <div class="address">Ed. Bogotá  <br> Bogotá D.C Colombia  <br> Tel: +57 (1) 123 45678  <br> Código Postal 110010 <br></div>
+            </div>
+            <div class="col-md-2"> 
+              <p class="lead">Dirección 4 </p>
+              <div class="address">Ed. Bogotá  <br> Bogotá D.C Colombia  <br> Tel: +57 (1) 123 45678  <br> Código Postal 110010 <br></div>
+            </div>
+            <nav class="col-md-3 border-start pl-2 pt-3"> 
+              <ul class="list-unstyled"> 
+                <li><a class="btn text-white text-start link-hover" href="contacto.html">Contacto </a></li>
+                <li> <a class="btn text-white text-start link-hover" href="#">link 1</a></li>
+                <li> <a class="btn text-white text-start link-hover" href="#">link 2</a></li>
+                <li> <a class="btn text-white text-start link-hover" href="#">link 3</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row border-bottom"> </div>
+          <div class="row">
+            <div class="col p-3 align-items-center bg-marca">
+              <div class="row"> 
+                <div class="col-md-1"> <img class="img-fluid" src="/dist/assets/img/logo-negativo.svg" alt="Logo empresa en negativo" style="height:50px"></div>
+                <div class="col-md-6">   
+                  <p>2021 Todos los derechos reservados &copy; Copyright Suempresa - Aquí la ciudad Colombia <br />  Web creada con y con y otra más - theme basado en Bootstrap - Íconos de Font Awesome y fuentes de Google Fonts</p>
+                </div>
+                <div class="col-md-2 text-end"> <span>Síguenos en redes sociales </span></div>
+                <div class="col-md-3">
+                  <div class="btn-group my-sm-1"><a class="btn btn-marca-oscuro ms-1" href="https://www.instagram.com/" title="Síguenos en Instagram"><span class="fa-brands fa-2x fa-instagram"> </span></a><a class="btn btn-marca-oscuro ms-1" href="https://linkedin.com" title="Síguenos en Linkedin"><span class="fa-brands fa-2x fa-linkedin"> </span></a></div>
+                  <div class="btn-group my-sm-1"> <a class="btn btn-marca-oscuro ms-1" href="https://www.facebook.com/" title="Síguenos en Facebook"> <span class="fa-brands fa-2x fa-facebook"> </span></a><a class="btn btn-marca-oscuro ms-1" href="https://twitter.com" title="Síguenos en Twitter"><span class="fa-brands fa-2x fa-twitter"> </span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts adicionales-->
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

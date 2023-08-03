@@ -1,0 +1,46 @@
+//- Mixin para crear servicios u objetos tipo card en filas de 3 objetos por fila, las imágenes deben estar en el directorio objetos-card y formato JPG
+//- TODO: Configurar el link está en servicios1.html
+mixin objetos-card(imagen, alt_imagen, title_imagen, titulo_objeto, texto_objeto)
+  .col-12.col-sm-6.col-md-4.mb-4.mt-4
+    .card.h-100
+      img.card-img-top(src='/dist/assets/img/objetos-card/' + imagen + '.jpg' alt="Imagen de " + alt_imagen title="Imagen: " + title_imagen)
+      .card-body
+        h3.card-title
+          a.stretched-link.text-decoration-none(href="servicios1.html")= titulo_objeto
+        p.card-text= texto_objeto
+
+//- Mixin para crear varios tarjetas en directorio, debe tener previamente una envoltura tipo container o container fluid
+mixin directorio(dependencia, cargo, nombre, email, celular, telefono)
+  .col-12.col-sm-6.mb-4.mt-4 
+    .card.bg-light.h-100.mb-2.shadow-sm.bg-body.rounded
+      .card-body
+        .row
+          .col.md-4
+            .card-title <strong>Departamento</strong>
+          .col.md-8
+              .card-text= dependencia
+        .row
+          .col.md-4
+            .card-title <strong>Cargo</strong>
+          .col.md-8
+              .card-text= cargo
+        .row
+          .col.md-4
+            .card-title <strong>Nombre</strong>
+          .col.md-8
+              .card-text= nombre
+        .row
+          .col.md-4
+            .card-title <strong>E-Mail</strong>
+          .col.md-8
+              .card-text= email
+        .row
+          .col.md-4
+            .card-title <strong>Celular</strong>
+          .col.md-8
+              .card-text= celular
+        .row
+          .col.md-4
+            .card-title <strong>Telefono</strong>
+          .col.md-8
+              .card-text= telefono

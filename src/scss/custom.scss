@@ -21,7 +21,7 @@
 // 2. Incluye cualquier sobrescritura de variable predeterminada aquí
 
 // Sobre escribiendo los valores por defecto
-$body-bg: #faecb4;
+$body-bg: #d3e8f9;
 $body-color: #111;
 
 // Configurando la fuente por defecto del texto en general de bootstrap
@@ -31,9 +31,9 @@ $font-family-sans-serif: 'Noto Sans', sans-serif !important;
 $font-family-marca: 'Edu TAS Beginner', cursive !important;
 
 // Creando mis propios colores de la marca
-$marca: rgb(10, 187, 152);
-$marca--claro: rgb(108, 255, 226);
-$marca--oscuro: rgb(8, 82, 67);
+$marca: rgb(54, 10, 187);
+$marca--claro: rgb(187, 135, 250);
+$marca--oscuro: rgb(28, 8, 82);
 
 // crear su propio sistema de color 
 $custom-colors: (

@@ -1,0 +1,861 @@
+extends ../componentes-pug/templates/template
+//- Traemos config pero lo sobre escribimos
+append config 
+  - page_title = "Inicio del sitio web"
+  - pagina_actual = "Inicio" 
+
+//- Ahora sobre escribimos el área de contenido generada en el template, el h1 ha sido colocado en el preheader
+block contenido
+  .container
+    h2.fw-bold.pt-3.pb-2 Contenido base - no es documentación de Bootstrap, es solo look & feel general <span class="fa fa-2x fa-home"> </span>
+    
+    hr 
+    h3.text-primary Tipografía 
+    h4.text-marca Tipografía con la fuente preconfigurada como text-marca
+    div
+      p.display-1 Display 1
+      p.display-2 Display 2
+      p.display-3 Display 3
+      p.display-4 Display 4
+      p.display-5 Display 5
+      p.display-6 Display 6
+
+      p.h1 Heading 1
+      p.h2 Heading 2
+      p.h3 Heading 3
+      p.h4 Heading 4
+      p.h5 Heading 5
+      p.h6 Heading 6
+
+      p.lead
+        | Párrafo clase Lead .
+
+      p
+        | Puede usar la etiqueta mark tag para hacer un texto remarcado 
+        mark highlight
+        |  text.
+      p
+        del Uso de la etiqueta del .
+      p
+        s Uso de la etiqueta s .
+      p
+        ins Uso de la etiqueta ins .
+      p
+        u Uso de la etiqueta u .
+      p
+        small Uso de la etiqueta small .
+      p
+        strong Uso de la etiqueta strong .
+      p
+        em Uso de la etiqueta em .
+
+
+    hr
+    h3.text-primary Colores de tipografía
+    div 
+      p.text-marca .text-marca contiene css específico 
+      p.text-marca--oscuro .text-marca--oscuro contiene css específico 
+      p.text-marca--claro .text-marca--claro contiene css específico 
+      
+      p.text-primary .text-primary
+      p.text-primary-emphasis .text-primary-emphasis
+      p.text-secondary .text-secondary
+      p.text-secondary-emphasis .text-secondary-emphasis
+      p.text-success .text-success
+      p.text-success-emphasis .text-success-emphasis
+      p.text-danger .text-danger
+      p.text-danger-emphasis .text-danger-emphasis
+      p.text-warning.bg-dark .text-warning
+      p.text-warning-emphasis .text-warning-emphasis
+      p.text-info.bg-dark .text-info
+      p.text-info-emphasis .text-info-emphasis
+      p.text-light.bg-dark .text-light
+      p.text-light-emphasis .text-light-emphasis
+      p.text-dark.bg-white .text-dark
+      p.text-dark-emphasis .text-dark-emphasis
+      p.text-body .text-body
+      p.text-body-emphasis .text-body-emphasis
+      p.text-body-secondary .text-body-secondary
+      p.text-body-tertiary .text-body-tertiary
+      p.text-black.bg-white .text-black
+      p.text-white.bg-dark .text-white
+      p.text-black-50.bg-white .text-black-50
+      p.text-white-50.bg-dark .text-white-50    
+
+    hr 
+    h3.text-primary Fondos de color y texto
+    div
+      .text-bg-marca.p-3 bg-marca texto de marca 
+      .text-bg-marca--claro.p-3 bg-marca--claro 
+      .text-bg-marca--oscuro.p-3 bg-marca--oscuro
+
+      .text-bg-primary.p-3 Primary with contrasting color
+      .text-bg-secondary.p-3 Secondary with contrasting color
+      .text-bg-success.p-3 Success with contrasting color
+      .text-bg-danger.p-3 Danger with contrasting color
+      .text-bg-warning.p-3 Warning with contrasting color
+      .text-bg-info.p-3 Info with contrasting color
+      .text-bg-light.p-3 Light with contrasting color
+      .text-bg-dark.p-3 Dark with contrasting color
+
+    hr 
+    h3.text-primary Bordes para elementos y subtítulos 
+    div 
+      p.border.border-marca border-marca  
+      p.border.border-marca-subtle border marca-subtle 
+      p.border.border-marca--oscuro border-marca--oscuro  
+      p.border.border-marca--oscuro-subtle border marca--oscuro-subtle 
+      p.border.border-marca--claro border-marca--claro  
+      p.border.border-marca--claro-subtle border marca--claro-subtle 
+
+      p.border.border-primary border-primary  
+      p.border.border-primary-subtle border primary-subtle 
+      p.border.border-secondary Texto para obtener algo de espacio
+      p.border.border-secondary-subtle Texto para obtener algo de espacio
+      p.border.border-success Texto para obtener algo de espacio
+      p.border.border-success-subtle Texto para obtener algo de espacio
+      p.border.border-danger Texto para obtener algo de espacio
+      p.border.border-danger-subtle Texto para obtener algo de espacio
+      p.border.border-warning Texto para obtener algo de espacio
+      p.border.border-warning-subtle Texto para obtener algo de espacio
+      p.border.border-info Texto para obtener algo de espacio
+      p.border.border-info-subtle Texto para obtener algo de espacio
+      p.border.border-light Texto para obtener algo de espacio
+      p.border.border-light-subtle Texto para obtener algo de espacio
+      p.border.border-dark Texto para obtener algo de espacio
+      p.border.border-dark-subtle Texto para obtener algo de espacio
+      p.border.border-black Texto para obtener algo de espacio
+      p.border.border-white Texto para obtener algo de espacio
+
+
+    hr
+    h3.text-primary Cajas con opacidad 
+    div 
+      .col-3.text-white.bg-primary.opacity-100 Este contenido est&aacute; creado para generar una caja, simplemente
+      .col-3.text-white.bg-primary.opacity-75 Este contenido est&aacute; creado para generar una caja, simplemente
+      .col-3.text-white.bg-primary.opacity-50 Este contenido est&aacute; creado para generar una caja, simplemente
+      .col-3.text-white.bg-primary.opacity-25 Este contenido est&aacute; creado para generar una caja, simplemente
+      .col-3.text-white.bg-primary.opacity-0 Este contenido est&aacute; creado para generar una caja, simplemente
+
+    hr
+    h3.text-primary Fondos simples y texto a medida del color.
+    div 
+      .p-3.mb-2.bg-marca.text-white .bg-marca
+      .p-3.mb-2.bg-marca--claro.text-white .bg-marca--claro
+      .p-3.mb-2.bg-marca--oscuro.text-white .bg-marca--oscuro
+
+      .p-3.mb-2.bg-primary.text-white .bg-primary
+      .p-3.mb-2.bg-primary-subtle.text-emphasis-primary .bg-primary-subtle
+      .p-3.mb-2.bg-secondary.text-white .bg-secondary
+      .p-3.mb-2.bg-secondary-subtle.text-emphasis-secondary .bg-secondary-subtle
+      .p-3.mb-2.bg-success.text-white .bg-success
+      .p-3.mb-2.bg-success-subtle.text-emphasis-success .bg-success-subtle
+      .p-3.mb-2.bg-danger.text-white .bg-danger
+      .p-3.mb-2.bg-danger-subtle.text-emphasis-danger .bg-danger-subtle
+      .p-3.mb-2.bg-warning.text-dark .bg-warning
+      .p-3.mb-2.bg-warning-subtle.text-emphasis-warning .bg-warning-subtle
+      .p-3.mb-2.bg-info.text-dark .bg-info
+      .p-3.mb-2.bg-info-subtle.text-emphasis-info .bg-info-subtle
+      .p-3.mb-2.bg-light.text-dark .bg-light
+      .p-3.mb-2.bg-light-subtle.text-emphasis-light .bg-light-subtle
+      .p-3.mb-2.bg-dark.text-white .bg-dark
+      .p-3.mb-2.bg-dark-subtle.text-emphasis-dark .bg-dark-subtle
+      p.p-3.mb-2.bg-body-secondary .bg-body-secondary
+      p.p-3.mb-2.bg-body-tertiary .bg-body-tertiary
+      .p-3.mb-2.bg-body.text-body .bg-body
+      .p-3.mb-2.bg-black.text-white .bg-black
+      .p-3.mb-2.bg-white.text-dark .bg-white
+      .p-3.mb-2.bg-transparent.text-body .bg-transparent    
+
+
+    hr 
+    h3.text-primary Hipervínculos
+    div
+      p
+        a.link-marca(href='#') marca link
+      p
+        a.link-marca--claro(href='#') marca--claro link
+      p
+        a.link-marca--oscuro(href='#') marca--oscuro link                    
+      p
+        a.link-primary(href='#') primary link
+      p
+        a.link-secondary(href='#') Secondary link
+      p
+        a.link-success(href='#') Success link
+      p
+        a.link-danger(href='#') Danger link
+      p
+        a.link-warning(href='#') Warning link
+      p
+        a.link-info(href='#') Info link
+      p
+        a.link-light(href='#') Light link
+      p
+        a.link-dark(href='#') Dark link
+      p
+        a.link-body-emphasis(href='#') Emphasis link
+
+    hr
+    h3.text-primary Listas en general
+    div 
+      blockquote.blockquote
+        p Uso de un párrafo dentro de la etiqueta blockquote .
+        footer.blockquote-footer
+          | Pie de página de la etiqueta blockquote blockquote-footer 
+          cite(title='Source Title') Uso de la etiqueta cite 
+
+      ul.list-unstyled
+        li Esto es una lista no ordenada con el estilo list-unstyled o sin estilo.
+        li Elemento 1 
+        li Elemento 2.
+        li Elemento 3.
+        li
+          | Lista sin estilo solo definida como li pero anidada:
+          ul
+            li Lista con etiqueta ul y elementos li 
+            li Elemento A 
+            li Elemento B 
+        li Elemento 4.
+
+      ul.list-inline
+        li.list-inline-item Elemento de lista no ordenada con estilo list-inline .
+        li.list-inline-item Otro elemento .
+        li.list-inline-item Otro elemento, todo en línea .
+
+      ul.list-group
+        li.list-group-item.disabled(aria-disabled='true') A disabled item - lista con list-group y list-group-item 
+        li.list-group-item A second item
+        li.list-group-item A third item
+        li.list-group-item A fourth item
+        li.list-group-item And a fifth one
+
+      p.mt-5.mb-3.fw-bold.lead Elementos de lista que no son lista semántica, se usan con hipervínculos y tienen efecto hover    
+      .list-group
+        a.list-group-item.list-group-item-action.list-group-item-primary(href='#') A simple primary list group item
+        a.list-group-item.list-group-item-action.list-group-item-secondary(href='#') A simple secondary list group item
+        a.list-group-item.list-group-item-action.list-group-item-success(href='#') A simple success list group item
+        a.list-group-item.list-group-item-action.list-group-item-danger(href='#') A simple danger list group item
+        a.list-group-item.list-group-item-action.list-group-item-warning(href='#') A simple warning list group item
+        a.list-group-item.list-group-item-action.list-group-item-info(href='#') A simple info list group item
+        a.list-group-item.list-group-item-action.list-group-item-light(href='#') A simple light list group item
+        a.list-group-item.list-group-item-action.list-group-item-dark(href='#') A simple dark list group item
+
+    hr
+    h3.text-primary Tablas
+    div       
+      h4 Tabla con th y marcado simple table y table-striped 
+      table.table.table-striped
+        thead
+          tr
+            th(scope='col') #
+            th(scope='col') First
+            th(scope='col') Last
+            th(scope='col') Handle
+        tbody
+          tr
+            th(scope='row') 1
+            td Mark
+            td Otto
+            td @mdo
+          tr
+            th(scope='row') 2
+            td Jacob
+            td Thornton
+            td @fat
+          tr
+            th(scope='row') 3
+            td(colspan='2') Larry the Bird
+            td @twitter
+
+      h4 Tabla con clases table table-dark y table-borderless 
+      table.table.table-dark.table-borderless
+        thead
+          tr
+            th(scope='col') #
+            th(scope='col') First
+            th(scope='col') Last
+            th(scope='col') Handle
+        tbody
+          tr
+            th(scope='row') 1
+            td Mark
+            td Otto
+            td @mdo
+          tr
+            th(scope='row') 2
+            td Jacob
+            td Thornton
+            td @fat
+          tr
+            th(scope='row') 3
+            td(colspan='2') Larry the Bird
+            td @twitter
+
+      h4 Tabla con clases table y table-hover con clases de color 
+      table.table.table-hover
+        thead
+          tr
+            th(scope='col') Class
+            th(scope='col') Heading
+            th(scope='col') Heading
+        tbody
+          tr
+            th(scope='row') Default
+            td Cell
+            td Cell
+          tr.table-primary
+            th(scope='row') Primary
+            td Cell
+            td Cell
+          tr.table-secondary
+            th(scope='row') Secondary
+            td Cell
+            td Cell
+          tr.table-success
+            th(scope='row') Success
+            td Cell
+            td Cell
+          tr.table-danger
+            th(scope='row') Danger
+            td Cell
+            td Cell
+          tr.table-warning
+            th(scope='row') Warning
+            td Cell
+            td Cell
+          tr.table-info
+            th(scope='row') Info
+            td Cell
+            td Cell
+          tr.table-light
+            th(scope='row') Light
+            td Cell
+            td Cell
+          tr.table-dark
+            th(scope='row') Dark
+            td Cell
+            td Cell
+
+      h4 Tabla con clases table table-sm y table-bordered 
+      table.table.table-sm.table-bordered
+        thead
+          tr
+            th(scope='col') #
+            th(scope='col') First
+            th(scope='col') Last
+            th(scope='col') Handle
+        tbody
+          tr
+            th(scope='row') 1
+            td Mark
+            td Otto
+            td @mdo
+          tr
+            th(scope='row') 2
+            td Jacob
+            td Thornton
+            td @fat
+          tr
+            th(scope='row') 3
+            td(colspan='2') Larry the Bird
+            td @twitter
+        
+    h2.fw-bold.pt-3.pb-2 Componentes 
+
+    hr 
+    h3.text-primary  Accordion
+    div
+      #accordionExample.accordion
+        .accordion-item
+          h4.accordion-header
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+              | Accordion Item #1
+          #collapseOne.accordion-collapse.collapse.show(data-bs-parent='#accordionExample')
+            .accordion-body
+              strong This is the first item&apos;s accordion body.
+              |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the 
+              code .accordion-body
+              | , though the transition does limit overflow.
+        .accordion-item
+          h4.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+              | Accordion Item #2
+          #collapseTwo.accordion-collapse.collapse(data-bs-parent='#accordionExample')
+            .accordion-body
+              strong This is the second item&apos;s accordion body.
+              |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the 
+              code .accordion-body
+              | , though the transition does limit overflow.
+        .accordion-item
+          h4.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+              | Accordion Item #3
+          #collapseThree.accordion-collapse.collapse(data-bs-parent='#accordionExample')
+            .accordion-body
+              strong This is the third item&apos;s accordion body.
+              |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the 
+              code .accordion-body
+              | , though the transition does limit overflow.
+
+    hr 
+    h3.text-primary  Alertas 
+    div
+      .alert.alert-primary.alert-dismissible.fade.show(role='alert')
+        | A simple primary alert with 
+        a.alert-link(href='#') an example link
+        | . Give it a click if you like.
+        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+      .alert.alert-secondary.alert-dismissible.fade.show(role='alert')
+        | A simple secondary alert with 
+        a.alert-link(href='#') an example link
+        | . Give it a click if you like.
+        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+      .alert.alert-success.alert-dismissible.fade.show(role='alert')
+        | A simple success alert with 
+        a.alert-link(href='#') an example link
+        | . Give it a click if you like.
+        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+      .alert.alert-danger.alert-dismissible.fade.show(role='alert')
+        | A simple danger alert with 
+        a.alert-link(href='#') an example link
+        | . Give it a click if you like.
+        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+      .alert.alert-warning.alert-dismissible.fade.show(role='alert')
+        | A simple warning alert with 
+        a.alert-link(href='#') an example link
+        | . Give it a click if you like.
+        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+      .alert.alert-info.alert-dismissible.fade.show(role='alert')
+        | A simple info alert with 
+        a.alert-link(href='#') an example link
+        | . Give it a click if you like.
+        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+      .alert.alert-light.alert-dismissible.fade.show(role='alert')
+        | A simple light alert with 
+        a.alert-link(href='#') an example link
+        | . Give it a click if you like.
+        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+      .alert.alert-dark.alert-dismissible.fade.show(role='alert')
+        | A simple dark alert with 
+        a.alert-link(href='#') an example link
+        | . Give it a click if you like.
+        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+
+      .alert.alert-success(role='alert')
+        h4.alert-heading Well done!
+        p
+          | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+        hr
+        p.mb-0
+          | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+
+    hr 
+    h3.text-primary  Bagdes 
+    div
+      p.h1
+        | Example heading 
+        span.badge.bg-marca New
+      p.h1
+        | Example heading 
+        span.badge.bg-marca--claro New
+      p.h1
+        | Example heading 
+        span.badge.bg-marca--oscuro New                    
+      p.h1
+        | Example heading 
+        span.badge.bg-primary New
+      p.h2
+        | Example heading 
+        span.badge.bg-secondary New
+      p.h3
+        | Example heading 
+        span.badge.bg-success New
+      p.h4
+        | Example heading 
+        span.badge.bg-danger New
+      p.h5
+        | Example heading 
+        span.badge.text-bg-warning New
+      p.h6
+        | Example heading 
+        span.badge.text-bg-info New
+      p.h6
+        | Example heading 
+        span.badge.text-bg-light New
+      p.h6
+        | Example heading 
+        span.badge.bg-dark New
+
+      span.badge.rounded-pill.bg-marca marca
+      span.badge.rounded-pill.bg-marca--claro marca--claro
+      span.badge.rounded-pill.bg-marca--oscuro marca--oscuro      
+
+      span.badge.rounded-pill.bg-primary Primary
+      span.badge.rounded-pill.bg-secondary Secondary
+      span.badge.rounded-pill.bg-success Success
+      span.badge.rounded-pill.bg-danger Danger
+      span.badge.rounded-pill.text-bg-warning Warning
+      span.badge.rounded-pill.text-bg-info Info
+      span.badge.rounded-pill.text-bg-light Light
+      span.badge.rounded-pill.bg-dark Dark
+
+    hr 
+    h3.text-primary  Migas de pan 
+    div
+      nav(aria-label='breadcrumb')
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') Home
+          li.breadcrumb-item
+            a(href='#') Library
+          li.breadcrumb-item.active(aria-current='page') Data
+
+    hr 
+    h3.text-primary  Botones 
+    .col-12.p-5
+      button.btn.btn-marca(type='button') marca
+      button.btn.btn-marca--claro(type='button') marca--claro
+      button.btn.btn-marca--oscuro(type='button') marca--oscuro
+
+      button.btn.btn-primary(type='button') Primary
+      button.btn.btn-secondary(type='button') Secondary
+      button.btn.btn-success(type='button') Success
+      button.btn.btn-danger(type='button') Danger
+      button.btn.btn-warning(type='button') Warning
+      button.btn.btn-info(type='button') Info
+      button.btn.btn-light(type='button') Light
+      button.btn.btn-dark(type='button') Dark
+      button.btn.btn-link(type='button') Link
+    .col-12.p-5
+      button.btn.btn-outline-marca(type='button') marca
+      button.btn.btn-outline-marca--claro(type='button') marca--claro
+      button.btn.btn-outline-marca--oscuro(type='button') marca--oscuro
+
+      button.btn.btn-outline-primary(type='button') Primary
+      button.btn.btn-outline-secondary(type='button') Secondary
+      button.btn.btn-outline-success(type='button') Success
+      button.btn.btn-outline-danger(type='button') Danger
+      button.btn.btn-outline-warning(type='button') Warning
+      button.btn.btn-outline-info(type='button') Info
+      button.btn.btn-outline-light(type='button') Light
+      button.btn.btn-outline-dark(type='button') Dark
+    .col-12.p-5
+      button.btn.btn-primary.btn-sm(type='button') Small button
+      button.btn.btn-primary(type='button') Standard button
+      button.btn.btn-primary.btn-lg(type='button') Large button
+
+    hr 
+    h3.text-primary  Cards 
+    .col-12.p-5       
+      .row.row-cols-1.row-cols-md-2.g-4
+        .col
+          .card
+            svg.bd-placeholder-img.card-img-top(width='100%' height='180' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: Image cap' preserveaspectratio='xMidYMid slice' focusable='false')
+              title Placeholder
+              rect(width='100%' height='100%' fill='#868e96')
+              text(x='50%' y='50%' fill='#dee2e6' dy='.3em') Image cap
+            .card-body
+              h5.card-title Card title
+              p.card-text
+                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+              a.btn.btn-primary(href='#') Go somewhere
+        .col
+          .card
+            .card-header
+              | Featured
+            .card-body
+              h5.card-title Card title
+              p.card-text
+                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+              a.btn.btn-primary(href='#') Go somewhere
+            .card-footer.text-body-secondary
+              | 2 days ago
+        .col
+          .card
+            .card-body
+              h5.card-title Card title
+              p.card-text
+                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+            ul.list-group.list-group-flush
+              li.list-group-item An item
+              li.list-group-item A second item
+              li.list-group-item A third item
+            .card-body
+              a.card-link(href='#') Card link
+              a.card-link(href='#') Another link
+        .col
+          .card
+            .row.g-0
+              .col-md-4
+                svg.bd-placeholder-img(width='100%' height='250' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: Image' preserveaspectratio='xMidYMid slice' focusable='false')
+                  title Placeholder
+                  rect(width='100%' height='100%' fill='#868e96')
+                  text(x='50%' y='50%' fill='#dee2e6' dy='.3em') Image
+              .col-md-8
+                .card-body
+                  h5.card-title Card title
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  p.card-text
+                    small.text-body-secondary Last updated 3 mins ago
+
+    hr 
+    h3.text-primary  Cards colores 
+    .col-12.p-5 
+      .row    
+        .col-sm-4 
+          .card.text-bg-marca.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card marca
+              p Algún texto que tendría la card             
+        .col-sm-4 
+          .card.text-bg-marca--claro.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card marca claro
+              p Algún texto que tendría la card   
+        .col-sm-4 
+          .card.text-bg-marca--oscuro.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card marca oscuro
+              p Algún texto que tendría la card       
+        .col-sm-4 
+          .card.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card normal 
+              p Algún texto que tendría la card       
+        .col-sm-4 
+          .card.text-bg-primary.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card primaria
+              p Algún texto que tendría la card     
+        .col-sm-4 
+          .card.text-bg-secondary.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card secondary
+              p Algún texto que tendría la card                
+        .col-sm-4 
+          .card.text-bg-info.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card info 
+              p Algún texto que tendría la card             
+        .col-sm-4 
+          .card.text-bg-danger.mb-3 
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card marca danger 
+              p Algún texto que tendría la card   
+        .col-sm-4 
+          .card.text-bg-success.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card marca success 
+              p Algún texto que tendría la card     
+        .col-sm-4 
+          .card.text-bg-warning.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card marca Warning 
+              p Algún texto que tendría la card                
+        .col-sm-4 
+          .card.text-bg-light.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card light 
+              p Algún texto que tendría la card   
+        .col-sm-4 
+          .card.text-bg-dark.mb-3
+            .card-header Header 
+            .card-body 
+              h2.card-title Título de la card dark 
+              p Algún texto que tendría la card                           
+
+    hr 
+    h3.text-primary  Navs  
+    .col-12.p-5 
+      nav.nav
+        a.nav-link.active(aria-current='page' href='#') Active
+        a.nav-link(href='#') Link
+        a.nav-link(href='#') Link
+        a.nav-link.disabled(aria-disabled='true') Disabled
+
+    .col-12.p-5 
+      nav
+        #nav-tab.nav.nav-tabs.mb-3(role='tablist')
+          button#nav-home-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#nav-home' type='button' role='tab' aria-controls='nav-home' aria-selected='true') Home
+          button#nav-profile-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false') Profile
+          button#nav-contact-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-contact' type='button' role='tab' aria-controls='nav-contact' aria-selected='false') Contact
+      #nav-tabContent.tab-content
+        #nav-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-home-tab')
+          p
+            | This is some placeholder content the 
+            strong Home tab&apos;s
+            |  associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other 
+            code .nav
+            | -powered navigation.
+        #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab')
+          p
+            | This is some placeholder content the 
+            strong Profile tab&apos;s
+            |  associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other 
+            code .nav
+            | -powered navigation.
+        #nav-contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab')
+          p
+            | This is some placeholder content the 
+            strong Contact tab&apos;s
+            |  associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other 
+            code .nav
+            | -powered navigation.
+
+    hr 
+    h3.text-primary  Navbars
+    .col-12.p-5  
+      nav.navbar.navbar-expand-lg.bg-body-tertiary
+        .container-fluid
+          a.navbar-brand(href='#')
+            img.d-inline-block.align-top(src='/dist/assets/img/logo-negativo.svg' width='38' height='30' alt='Bootstrap' loading='lazy' style='filter: invert(1) grayscale(100%) brightness(200%);')
+          button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.me-auto.mb-2.mb-lg-0
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Home
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | Dropdown
+                ul.dropdown-menu
+                  li
+                    a.dropdown-item(href='#') Action
+                  li
+                    a.dropdown-item(href='#') Another action
+                  li
+                    hr.dropdown-divider
+                  li
+                    a.dropdown-item(href='#') Something else here
+              li.nav-item
+                a.nav-link.disabled(aria-disabled='true') Disabled
+            form.d-flex(role='search')
+              input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+              button.btn.btn-outline-dark(type='submit') Search
+
+    .col-12.p-5  
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.mt-5
+        .container-fluid
+          a.navbar-brand(href='#')
+            img.d-inline-block.align-top(src='/dist/assets/img/logo.svg' width='38' height='30' alt='Bootstrap' loading='lazy')
+          button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent2' aria-controls='navbarSupportedContent2' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent2.collapse.navbar-collapse
+            ul.navbar-nav.me-auto.mb-2.mb-lg-0
+              li.nav-item
+                a.nav-link.active(aria-current='page' href='#') Home
+              li.nav-item
+                a.nav-link(href='#') Link
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | Dropdown
+                ul.dropdown-menu
+                  li
+                    a.dropdown-item(href='#') Action
+                  li
+                    a.dropdown-item(href='#') Another action
+                  li
+                    hr.dropdown-divider
+                  li
+                    a.dropdown-item(href='#') Something else here
+              li.nav-item
+                a.nav-link.disabled(aria-disabled='true') Disabled
+            form.d-flex(role='search')
+              input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+              button.btn.btn-outline-light(type='submit') Search
+
+    hr 
+    h3.text-primary  Barras de progreso 
+    .col-12.p-5  
+      .progress.mb-3(role='progressbar' aria-label='Example with label' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100')
+        .progress-bar 0%
+
+      .progress.mb-3(role='progressbar' aria-label='Success example with label' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+        .progress-bar.bg-marca.w-25 25%
+      .progress.mb-3(role='progressbar' aria-label='Success example with label' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+        .progress-bar.bg-marca--claro.w-25 25%
+      .progress.mb-3(role='progressbar' aria-label='Success example with label' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+        .progress-bar.bg-marca--oscuro.w-25 25%
+
+      .progress.mb-3(role='progressbar' aria-label='Success example with label' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+        .progress-bar.bg-success.w-25 25%
+      .progress.mb-3(role='progressbar' aria-label='Info example with label' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100')
+        .progress-bar.text-bg-info.w-50 50%
+      .progress.mb-3(role='progressbar' aria-label='Warning example with label' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+        .progress-bar.text-bg-warning.w-75 75%
+      .progress(role='progressbar' aria-label='Danger example with label' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100')
+        .progress-bar.bg-danger.w-100 100%
+
+
+      .progress-stacked
+        .progress(role='progressbar' aria-label='Segment one - default example' style='width: 15%' aria-valuenow='15' aria-valuemin='0' aria-valuemax='100')
+          .progress-bar
+        .progress(role='progressbar' aria-label='Segment two - animated striped success example' style='width: 40%' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100')
+          .progress-bar.progress-bar-striped.progress-bar-animated.bg-success
+
+    hr 
+    h3.text-primary  Spinners 
+    .col-12.p-5     
+      .spinner-border.text-marca(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-marca--oscuro(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-marca--claro(role='status')
+        span.visually-hidden Loading...      
+      
+      .spinner-border.text-primary(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-secondary(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-success(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-danger(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-warning(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-info(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-light(role='status')
+        span.visually-hidden Loading...
+      .spinner-border.text-dark(role='status')
+        span.visually-hidden Loading...
+
+    .col-12.p-5     
+      .spinner-grow.text-marca(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-marca--oscuro(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-marca--claro(role='status')
+        span.visually-hidden Loading...      
+
+      .spinner-grow.text-primary(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-secondary(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-success(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-danger(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-warning(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-info(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-light(role='status')
+        span.visually-hidden Loading...
+      .spinner-grow.text-dark(role='status')
+        span.visually-hidden Loading...

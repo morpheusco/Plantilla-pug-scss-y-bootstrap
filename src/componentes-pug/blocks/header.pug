@@ -1,0 +1,30 @@
+//- Barra de navegación como pre header
+nav.navbar.navbar-expand-md.bg-light
+  .container
+    a.navbar(href="index.html" title="Ir al inicio del sitio") 
+      //- Cargamos un logo genérico
+      img.img-fluid(src="/dist/assets/img/logo.svg" style="height: 44px;" alt="Logo de la empresa") 
+    button.navbar-toggler.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    //- Asignando un id para controlar específicamente el menú
+    .navbar-collapse.collapse#menu-principal
+      ul.navbar-nav.mx-auto
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false") La empresa  
+          ul.dropdown-menu(aria-labelledy="navbarDropdown")
+            li
+              a.dropdown-item(href="quienes.html" title="Ir al menú desplegable 1") Quienes somos 
+            li 
+              a.dropdown-item(href="equipo.html" title="Ir al menú desplegable 2") Nuestro equipo 
+        li.nav-item.active
+          a.nav-link(href="pagina1.html" title="Ir al sitio no. 1") Página1  <span class="sr-only"> (Actual) </span>
+        li.nav-item
+          a.nav-link(href="pagina2.html" title="Ir al sitio no. 2") Página2 
+        li.nav-item
+          a.nav-link(href="pagina3.html" title="Ir al sitio no. 3") Página3 
+        li.nav-item
+          a.nav-link(href="pagina4.html" title="Ir al sitio no. 4") Página4
+        li.nav-item
+          a.nav-link(href="pagina5.html" title="Ir al sitio no. 5") Página5
+        li.nav-item
+          a.nav-link(href="https://www.google.com" title="Ir al sitio externo") Link externo

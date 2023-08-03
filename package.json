@@ -4,9 +4,9 @@
   "description": "Plantilla base para mockups futuros",
   "source": "src/index.pug",
   "scripts": {
-    "Vigila-Pug": "pug src -o dist -P -w",
+    "Vigila-Pug": "pug src/paginas-pug -o dist -P -w",
     "Vigila-Sass": "sass --watch src/scss/custom.scss dist/css/estilos.css",
-    "LimpiaCss": "purgecss --css ./dist/**/*.css --content ./dist/*.html --output ./dist/css/optimizado"
+    "Limpia-Css": "purgecss --css ./dist/css/estilos.css --content ./dist/*.html --output ./dist/assets/css-optimizado"
   },
   "keywords": [],
   "author": "Edison Monsalve",

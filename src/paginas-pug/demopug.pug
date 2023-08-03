@@ -1,0 +1,72 @@
+extends ../componentes-pug/templates/template
+//- Traemos config pero lo sobre escribimos
+append config 
+  - page_title = "Inicio del sitio web"
+  - pagina_actual = "Inicio" 
+
+//- Ahora sobre escribimos el área de contenido generada en el template, el h1 ha sido colocado en el preheader
+block contenido
+  section.container
+    //- Ejemplo de cómo se usa el mixin para generar productos o servicios 
+    //- Para llamar al mixin usamos el nombre asignado y le pasamos los valores, en este caso es: imagen, alt_imagen, title_imagen, titulo_objeto, texto_objeto 
+    .row 
+      h2.text-center.mt-3 Nuestros servicios <hr />
+    .row 
+      +objetos-card('ejemplo1', 'descripción de la imagen 1', 'titulo de la imagen 1, genera su uso', 'Servicios 1', 'Aquí el texto del servicio no. 1') 
+      +objetos-card('ejemplo2', 'descripción de la imagen 2', 'titulo de la imagen 2, genera su uso', 'Servicios 2', 'Aquí el texto del servicio no. 2') 
+      +objetos-card('ejemplo3', 'descripción de la imagen 3', 'titulo de la imagen 3, genera su uso', 'Servicios 3', 'Aquí el texto del servicio no. 3') 
+      +objetos-card('ejemplo4', 'descripción de la imagen 4', 'titulo de la imagen 4, genera su uso', 'Servicios 4', 'Aquí el texto del servicio no. 4') 
+      +objetos-card('ejemplo5', 'descripción de la imagen 5', 'titulo de la imagen 5, genera su uso', 'Servicios 5', 'Aquí el texto del servicio no. 5') 
+
+    // Usaré ahora un mixin de directorio con los parámetros dependencia, cargo, nombre, email, celular, telefono
+    .row 
+      h2.text-center.mt-3 Usando mixin de directorio <hr />
+    .row 
+      +directorio('Sistemas', 'Developer', 'Morpheusco', 'yotas@pelotas.com', '+57 1 234 56 78', '+57 1 123 45 67')
+      +directorio('Sistemas', 'Developer', 'Ottro man', 'yotas@pelotas.com', '+57 1 234 56 78', '+57 1 123 45 67')
+      +directorio('Sistemas', 'Developer', 'Elfar', 'yotas@pelotas.com', '+57 1 234 56 78', '+57 1 123 45 67')
+      +directorio('Sistemas', 'Developer', 'Julito', 'yotas@pelotas.com', '+57 1 234 56 78', '+57 1 123 45 67')
+
+    //- Vamos a insertar contenido para probar el css
+    .row 
+      h1.text-info Demos de texto  y awesome font
+        span.fa.fa-home.fa-3x
+      h2.text-marca nivel 2 con fuente de la casa y marca 
+      h3 nivel 3
+      h4 nivel 4 
+      h5 nivel 5
+      h6 nivel 6
+      p Esto es un párrafo
+      p Otro párrafo adicional 
+      p.text-marca Este es un texto con el color de la marca 
+      button(type="button" class="btn btn-primary") Boton primario 
+      button(type="button" class="btn btn-dark") Boton dark 
+      button(type="button" class="btn btn-link") Boton link 
+      .mt-5 
+        button(type="button" class="btn btn-marca--claro") Boton Marca claro
+        button(type="button" class="btn btn-marca--oscuro") Boton Marca oscuro 
+        button(type="button" class="btn btn-marca") Boton Marca 
+      .mt-5 
+        .card.text-bg-primary.mb-3
+          .card-header Header 
+          .card-body 
+            h2.card-title Título de la card primaria
+            p Algún texto que tendría la card 
+        .card.text-bg-marca.mb-3
+          .card-header Header 
+          .card-body 
+            h2.card-title Título de la card marca
+            p Algún texto que tendría la card             
+        .card.text-bg-marca--claro.mb-3
+          .card-header Header 
+          .card-body 
+            h2.card-title Título de la card marca claro
+            p Algún texto que tendría la card   
+        .card.text-bg-marca--oscuro.mb-3
+          .card-header Header 
+          .card-body 
+            h2.card-title Título de la card marca oscuro
+            p Algún texto que tendría la card               
+      
+
+    

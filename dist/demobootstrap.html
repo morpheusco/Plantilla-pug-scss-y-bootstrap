@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Comentarios para html-->
+  <head> 
+    <meta charset="UTF-8"/>
+    <title>Inicio del sitio web | MiEmpresa</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="descripción de la página, si se desea cambiar se debería tener variables en el config">
+    <link rel="stylesheet" href="/dist/css/estilos.css">
+    <link rel="stylesheet" href="/dist/assets/fontawesome-free-6.4.0-web/css/all.css">
+  </head>
+  <body> 
+    <header class="shadow">
+      <div class="container mt-1 mb-1">
+        <div class="row"> 
+          <div class="col-md-6">
+            <h1 class="h6 mt-1"> <small>El slogan bonito de la empresa </small></h1>
+          </div>
+          <div class="col-md-3 mb-sm-2"> <a href="mailto:elemail@laempresa.com"><small> elemail@laempresa.com </small></a></div>
+          <div class="col-md-3">
+            <div class="form"> 
+              <div class="row">
+                <div class="col-8"> 
+                  <input class="form-control form-control-sm me-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                </div>
+                <div class="col-4"> 
+                  <button class="btn btn-outline-secondary form-control-sm me-sm-2 my-sm-0" type="submit" value="Buscar en la web" name="buscador" aria-label="Buscar" id="btn_buscador" alt="Buscador"><span alt="Boton buscador" class="fa fa-search"> </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container"><a class="navbar" href="index.html" title="Ir al inicio del sitio"> <img class="img-fluid" src="/dist/assets/img/logo.svg" style="height: 44px;" alt="Logo de la empresa"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="navbar-collapse collapse" id="menu-principal">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La empresa  </a>
+                <ul class="dropdown-menu" aria-labelledy="navbarDropdown">
+                  <li><a class="dropdown-item" href="quienes.html" title="Ir al menú desplegable 1">Quienes somos </a></li>
+                  <li> <a class="dropdown-item" href="equipo.html" title="Ir al menú desplegable 2">Nuestro equipo </a></li>
+                </ul>
+              </li>
+              <li class="nav-item active"><a class="nav-link" href="pagina1.html" title="Ir al sitio no. 1">Página1  <span class="sr-only"> (Actual) </span></a></li>
+              <li class="nav-item"><a class="nav-link" href="pagina2.html" title="Ir al sitio no. 2">Página2 </a></li>
+              <li class="nav-item"><a class="nav-link" href="pagina3.html" title="Ir al sitio no. 3">Página3 </a></li>
+              <li class="nav-item"><a class="nav-link" href="pagina4.html" title="Ir al sitio no. 4">Página4</a></li>
+              <li class="nav-item"><a class="nav-link" href="pagina5.html" title="Ir al sitio no. 5">Página5</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.google.com" title="Ir al sitio externo">Link externo</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main> 
+    </main>
+    <section> 
+      <div class="container">
+        <h2 class="fw-bold pt-3 pb-2">Contenido base - no es documentación de Bootstrap, es solo look & feel general <span class="fa fa-2x fa-home"> </span></h2>
+        <hr>
+        <h3 class="text-primary">Tipografía </h3>
+        <h4 class="text-marca">Tipografía con la fuente preconfigurada como text-marca</h4>
+        <div>
+          <p class="display-1">Display 1</p>
+          <p class="display-2">Display 2</p>
+          <p class="display-3">Display 3</p>
+          <p class="display-4">Display 4</p>
+          <p class="display-5">Display 5</p>
+          <p class="display-6">Display 6</p>
+          <p class="h1">Heading 1</p>
+          <p class="h2">Heading 2</p>
+          <p class="h3">Heading 3</p>
+          <p class="h4">Heading 4</p>
+          <p class="h5">Heading 5</p>
+          <p class="h6">Heading 6</p>
+          <p class="lead">Párrafo clase Lead .</p>
+          <p>Puede usar la etiqueta mark tag para hacer un texto remarcado 
+            <mark>highlight</mark> text.
+          </p>
+          <p>
+            <del>Uso de la etiqueta del .</del>
+          </p>
+          <p>
+            <s>Uso de la etiqueta s .</s>
+          </p>
+          <p><ins>Uso de la etiqueta ins .</ins></p>
+          <p>
+            <u>Uso de la etiqueta u .</u>
+          </p>
+          <p><small>Uso de la etiqueta small .</small></p>
+          <p><strong>Uso de la etiqueta strong .</strong></p>
+          <p><em>Uso de la etiqueta em .</em></p>
+        </div>
+        <hr>
+        <h3 class="text-primary">Colores de tipografía</h3>
+        <div> 
+          <p class="text-marca">.text-marca contiene css específico </p>
+          <p class="text-marca--oscuro">.text-marca--oscuro contiene css específico </p>
+          <p class="text-marca--claro">.text-marca--claro contiene css específico </p>
+          <p class="text-primary">.text-primary</p>
+          <p class="text-primary-emphasis">.text-primary-emphasis</p>
+          <p class="text-secondary">.text-secondary</p>
+          <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+          <p class="text-success">.text-success</p>
+          <p class="text-success-emphasis">.text-success-emphasis</p>
+          <p class="text-danger">.text-danger</p>
+          <p class="text-danger-emphasis">.text-danger-emphasis</p>
+          <p class="text-warning bg-dark">.text-warning</p>
+          <p class="text-warning-emphasis">.text-warning-emphasis</p>
+          <p class="text-info bg-dark">.text-info</p>
+          <p class="text-info-emphasis">.text-info-emphasis</p>
+          <p class="text-light bg-dark">.text-light</p>
+          <p class="text-light-emphasis">.text-light-emphasis</p>
+          <p class="text-dark bg-white">.text-dark</p>
+          <p class="text-dark-emphasis">.text-dark-emphasis</p>
+          <p class="text-body">.text-body</p>
+          <p class="text-body-emphasis">.text-body-emphasis</p>
+          <p class="text-body-secondary">.text-body-secondary</p>
+          <p class="text-body-tertiary">.text-body-tertiary</p>
+          <p class="text-black bg-white">.text-black</p>
+          <p class="text-white bg-dark">.text-white</p>
+          <p class="text-black-50 bg-white">.text-black-50</p>
+          <p class="text-white-50 bg-dark">.text-white-50    </p>
+        </div>
+        <hr>
+        <h3 class="text-primary">Fondos de color y texto</h3>
+        <div>
+          <div class="text-bg-marca p-3">bg-marca texto de marca </div>
+          <div class="text-bg-marca--claro p-3">bg-marca--claro </div>
+          <div class="text-bg-marca--oscuro p-3">bg-marca--oscuro</div>
+          <div class="text-bg-primary p-3">Primary with contrasting color</div>
+          <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
+          <div class="text-bg-success p-3">Success with contrasting color</div>
+          <div class="text-bg-danger p-3">Danger with contrasting color</div>
+          <div class="text-bg-warning p-3">Warning with contrasting color</div>
+          <div class="text-bg-info p-3">Info with contrasting color</div>
+          <div class="text-bg-light p-3">Light with contrasting color</div>
+          <div class="text-bg-dark p-3">Dark with contrasting color</div>
+        </div>
+        <hr>
+        <h3 class="text-primary">Bordes para elementos y subtítulos </h3>
+        <div> 
+          <p class="border border-marca">border-marca  </p>
+          <p class="border border-marca-subtle">border marca-subtle </p>
+          <p class="border border-marca--oscuro">border-marca--oscuro  </p>
+          <p class="border border-marca--oscuro-subtle">border marca--oscuro-subtle </p>
+          <p class="border border-marca--claro">border-marca--claro  </p>
+          <p class="border border-marca--claro-subtle">border marca--claro-subtle </p>
+          <p class="border border-primary">border-primary  </p>
+          <p class="border border-primary-subtle">border primary-subtle </p>
+          <p class="border border-secondary">Texto para obtener algo de espacio</p>
+          <p class="border border-secondary-subtle">Texto para obtener algo de espacio</p>
+          <p class="border border-success">Texto para obtener algo de espacio</p>
+          <p class="border border-success-subtle">Texto para obtener algo de espacio</p>
+          <p class="border border-danger">Texto para obtener algo de espacio</p>
+          <p class="border border-danger-subtle">Texto para obtener algo de espacio</p>
+          <p class="border border-warning">Texto para obtener algo de espacio</p>
+          <p class="border border-warning-subtle">Texto para obtener algo de espacio</p>
+          <p class="border border-info">Texto para obtener algo de espacio</p>
+          <p class="border border-info-subtle">Texto para obtener algo de espacio</p>
+          <p class="border border-light">Texto para obtener algo de espacio</p>
+          <p class="border border-light-subtle">Texto para obtener algo de espacio</p>
+          <p class="border border-dark">Texto para obtener algo de espacio</p>
+          <p class="border border-dark-subtle">Texto para obtener algo de espacio</p>
+          <p class="border border-black">Texto para obtener algo de espacio</p>
+          <p class="border border-white">Texto para obtener algo de espacio</p>
+        </div>
+        <hr>
+        <h3 class="text-primary">Cajas con opacidad </h3>
+        <div> 
+          <div class="col-3 text-white bg-primary opacity-100">Este contenido est&aacute; creado para generar una caja, simplemente</div>
+          <div class="col-3 text-white bg-primary opacity-75">Este contenido est&aacute; creado para generar una caja, simplemente</div>
+          <div class="col-3 text-white bg-primary opacity-50">Este contenido est&aacute; creado para generar una caja, simplemente</div>
+          <div class="col-3 text-white bg-primary opacity-25">Este contenido est&aacute; creado para generar una caja, simplemente</div>
+          <div class="col-3 text-white bg-primary opacity-0">Este contenido est&aacute; creado para generar una caja, simplemente</div>
+        </div>
+        <hr>
+        <h3 class="text-primary">Fondos simples y texto a medida del color.</h3>
+        <div> 
+          <div class="p-3 mb-2 bg-marca text-white">.bg-marca</div>
+          <div class="p-3 mb-2 bg-marca--claro text-white">.bg-marca--claro</div>
+          <div class="p-3 mb-2 bg-marca--oscuro text-white">.bg-marca--oscuro</div>
+          <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+          <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">.bg-primary-subtle</div>
+          <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+          <div class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">.bg-secondary-subtle</div>
+          <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+          <div class="p-3 mb-2 bg-success-subtle text-emphasis-success">.bg-success-subtle</div>
+          <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+          <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger">.bg-danger-subtle</div>
+          <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+          <div class="p-3 mb-2 bg-warning-subtle text-emphasis-warning">.bg-warning-subtle</div>
+          <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+          <div class="p-3 mb-2 bg-info-subtle text-emphasis-info">.bg-info-subtle</div>
+          <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+          <div class="p-3 mb-2 bg-light-subtle text-emphasis-light">.bg-light-subtle</div>
+          <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+          <div class="p-3 mb-2 bg-dark-subtle text-emphasis-dark">.bg-dark-subtle</div>
+          <p class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</p>
+          <p class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</p>
+          <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+          <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+          <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+          <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent    </div>
+        </div>
+        <hr>
+        <h3 class="text-primary">Hipervínculos</h3>
+        <div>
+          <p><a class="link-marca" href="#">marca link</a></p>
+          <p><a class="link-marca--claro" href="#">marca--claro link</a></p>
+          <p><a class="link-marca--oscuro" href="#">marca--oscuro link                    </a></p>
+          <p><a class="link-primary" href="#">primary link</a></p>
+          <p><a class="link-secondary" href="#">Secondary link</a></p>
+          <p><a class="link-success" href="#">Success link</a></p>
+          <p><a class="link-danger" href="#">Danger link</a></p>
+          <p><a class="link-warning" href="#">Warning link</a></p>
+          <p><a class="link-info" href="#">Info link</a></p>
+          <p><a class="link-light" href="#">Light link</a></p>
+          <p><a class="link-dark" href="#">Dark link</a></p>
+          <p><a class="link-body-emphasis" href="#">Emphasis link</a></p>
+        </div>
+        <hr>
+        <h3 class="text-primary">Listas en general</h3>
+        <div> 
+          <blockquote class="blockquote">
+            <p>Uso de un párrafo dentro de la etiqueta blockquote .</p>
+            <footer class="blockquote-footer">Pie de página de la etiqueta blockquote blockquote-footer 
+              <cite title="Source Title">Uso de la etiqueta cite </cite>
+            </footer>
+          </blockquote>
+          <ul class="list-unstyled">
+            <li>Esto es una lista no ordenada con el estilo list-unstyled o sin estilo.</li>
+            <li>Elemento 1 </li>
+            <li>Elemento 2.</li>
+            <li>Elemento 3.</li>
+            <li>Lista sin estilo solo definida como li pero anidada:
+              <ul>
+                <li>Lista con etiqueta ul y elementos li </li>
+                <li>Elemento A </li>
+                <li>Elemento B </li>
+              </ul>
+            </li>
+            <li>Elemento 4.</li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item">Elemento de lista no ordenada con estilo list-inline .</li>
+            <li class="list-inline-item">Otro elemento .</li>
+            <li class="list-inline-item">Otro elemento, todo en línea .</li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item disabled" aria-disabled="true">A disabled item - lista con list-group y list-group-item </li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+          <p class="mt-5 mb-3 fw-bold lead">Elementos de lista que no son lista semántica, se usan con hipervínculos y tienen efecto hover    </p>
+          <div class="list-group"><a class="list-group-item list-group-item-action list-group-item-primary" href="#">A simple primary list group item</a><a class="list-group-item list-group-item-action list-group-item-secondary" href="#">A simple secondary list group item</a><a class="list-group-item list-group-item-action list-group-item-success" href="#">A simple success list group item</a><a class="list-group-item list-group-item-action list-group-item-danger" href="#">A simple danger list group item</a><a class="list-group-item list-group-item-action list-group-item-warning" href="#">A simple warning list group item</a><a class="list-group-item list-group-item-action list-group-item-info" href="#">A simple info list group item</a><a class="list-group-item list-group-item-action list-group-item-light" href="#">A simple light list group item</a><a class="list-group-item list-group-item-action list-group-item-dark" href="#">A simple dark list group item</a></div>
+        </div>
+        <hr>
+        <h3 class="text-primary">Tablas</h3>
+        <div>      
+          <h4>Tabla con th y marcado simple table y table-striped </h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Tabla con clases table table-dark y table-borderless </h4>
+          <table class="table table-dark table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Tabla con clases table y table-hover con clases de color </h4>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Heading</th>
+                <th scope="col">Heading</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Default</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-primary">
+                <th scope="row">Primary</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">Secondary</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">Success</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">Danger</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">Warning</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">Info</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-light">
+                <th scope="row">Light</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">Dark</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Tabla con clases table table-sm y table-bordered </h4>
+          <table class="table table-sm table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 class="fw-bold pt-3 pb-2">Componentes </h2>
+        <hr>
+        <h3 class="text-primary"> Accordion</h3>
+        <div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+              </h4>
+              <div class="accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button>
+              </h4>
+              <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body"><strong>This is the second item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button>
+              </h4>
+              <div class="accordion-collapse collapse" id="collapseThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Alertas </h3>
+        <div>
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">A simple primary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-secondary alert-dismissible fade show" role="alert">A simple secondary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-success alert-dismissible fade show" role="alert">A simple success alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">A simple danger alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">A simple warning alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-info alert-dismissible fade show" role="alert">A simple info alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-light alert-dismissible fade show" role="alert">A simple light alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-dark alert-dismissible fade show" role="alert">A simple dark alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+          </div>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Bagdes </h3>
+        <div>
+          <p class="h1">Example heading <span class="badge bg-marca">New</span></p>
+          <p class="h1">Example heading <span class="badge bg-marca--claro">New</span></p>
+          <p class="h1">Example heading <span class="badge bg-marca--oscuro">New                    </span></p>
+          <p class="h1">Example heading <span class="badge bg-primary">New</span></p>
+          <p class="h2">Example heading <span class="badge bg-secondary">New</span></p>
+          <p class="h3">Example heading <span class="badge bg-success">New</span></p>
+          <p class="h4">Example heading <span class="badge bg-danger">New</span></p>
+          <p class="h5">Example heading <span class="badge text-bg-warning">New</span></p>
+          <p class="h6">Example heading <span class="badge text-bg-info">New</span></p>
+          <p class="h6">Example heading <span class="badge text-bg-light">New</span></p>
+          <p class="h6">Example heading <span class="badge bg-dark">New</span></p><span class="badge rounded-pill bg-marca">marca</span><span class="badge rounded-pill bg-marca--claro">marca--claro</span><span class="badge rounded-pill bg-marca--oscuro">marca--oscuro      </span><span class="badge rounded-pill bg-primary">Primary</span><span class="badge rounded-pill bg-secondary">Secondary</span><span class="badge rounded-pill bg-success">Success</span><span class="badge rounded-pill bg-danger">Danger</span><span class="badge rounded-pill text-bg-warning">Warning</span><span class="badge rounded-pill text-bg-info">Info</span><span class="badge rounded-pill text-bg-light">Light</span><span class="badge rounded-pill bg-dark">Dark</span>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Migas de pan </h3>
+        <div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Botones </h3>
+        <div class="col-12 p-5">
+          <button class="btn btn-marca" type="button">marca</button>
+          <button class="btn btn-marca--claro" type="button">marca--claro</button>
+          <button class="btn btn-marca--oscuro" type="button">marca--oscuro</button>
+          <button class="btn btn-primary" type="button">Primary</button>
+          <button class="btn btn-secondary" type="button">Secondary</button>
+          <button class="btn btn-success" type="button">Success</button>
+          <button class="btn btn-danger" type="button">Danger</button>
+          <button class="btn btn-warning" type="button">Warning</button>
+          <button class="btn btn-info" type="button">Info</button>
+          <button class="btn btn-light" type="button">Light</button>
+          <button class="btn btn-dark" type="button">Dark</button>
+          <button class="btn btn-link" type="button">Link</button>
+        </div>
+        <div class="col-12 p-5">
+          <button class="btn btn-outline-marca" type="button">marca</button>
+          <button class="btn btn-outline-marca--claro" type="button">marca--claro</button>
+          <button class="btn btn-outline-marca--oscuro" type="button">marca--oscuro</button>
+          <button class="btn btn-outline-primary" type="button">Primary</button>
+          <button class="btn btn-outline-secondary" type="button">Secondary</button>
+          <button class="btn btn-outline-success" type="button">Success</button>
+          <button class="btn btn-outline-danger" type="button">Danger</button>
+          <button class="btn btn-outline-warning" type="button">Warning</button>
+          <button class="btn btn-outline-info" type="button">Info</button>
+          <button class="btn btn-outline-light" type="button">Light</button>
+          <button class="btn btn-outline-dark" type="button">Dark</button>
+        </div>
+        <div class="col-12 p-5">
+          <button class="btn btn-primary btn-sm" type="button">Small button</button>
+          <button class="btn btn-primary" type="button">Standard button</button>
+          <button class="btn btn-primary btn-lg" type="button">Large button</button>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Cards </h3>
+        <div class="col-12 p-5">      
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveaspectratio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                </svg>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-header">Featured</div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                </div>
+                <div class="card-footer text-body-secondary">2 days ago</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body"><a class="card-link" href="#">Card link</a><a class="card-link" href="#">Another link</a></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveaspectratio="xMidYMid slice" focusable="false">
+                      <title>Placeholder</title>
+                      <rect width="100%" height="100%" fill="#868e96"></rect>
+                      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text>
+                    </svg>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Cards colores </h3>
+        <div class="col-12 p-5"> 
+          <div class="row">   
+            <div class="col-sm-4"> 
+              <div class="card text-bg-marca mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card marca</h2>
+                  <p>Algún texto que tendría la card             </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-marca--claro mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card marca claro</h2>
+                  <p>Algún texto que tendría la card   </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-marca--oscuro mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card marca oscuro</h2>
+                  <p>Algún texto que tendría la card       </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card normal </h2>
+                  <p>Algún texto que tendría la card       </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-primary mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card primaria</h2>
+                  <p>Algún texto que tendría la card     </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-secondary mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card secondary</h2>
+                  <p>Algún texto que tendría la card                </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-info mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card info </h2>
+                  <p>Algún texto que tendría la card             </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-danger mb-3"> 
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card marca danger </h2>
+                  <p>Algún texto que tendría la card   </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-success mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card marca success </h2>
+                  <p>Algún texto que tendría la card     </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-warning mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card marca Warning </h2>
+                  <p>Algún texto que tendría la card                </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-light mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card light </h2>
+                  <p>Algún texto que tendría la card   </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card text-bg-dark mb-3">
+                <div class="card-header">Header </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Título de la card dark </h2>
+                  <p>Algún texto que tendría la card                           </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Navs  </h3>
+        <div class="col-12 p-5"> 
+          <nav class="nav"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled" aria-disabled="true">Disabled</a></nav>
+        </div>
+        <div class="col-12 p-5"> 
+          <nav>
+            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <p>This is some placeholder content the <strong>Home tab&apos;s</strong> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <p>This is some placeholder content the <strong>Profile tab&apos;s</strong> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <p>This is some placeholder content the <strong>Contact tab&apos;s</strong> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Navbars</h3>
+        <div class="col-12 p-5"> 
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img class="d-inline-block align-top" src="/dist/assets/img/logo-negativo.svg" width="38" height="30" alt="Bootstrap" loading="lazy" style="filter: invert(1) grayscale(100%) brightness(200%);"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-12 p-5"> 
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img class="d-inline-block align-top" src="/dist/assets/img/logo.svg" width="38" height="30" alt="Bootstrap" loading="lazy"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Barras de progreso </h3>
+        <div class="col-12 p-5"> 
+          <div class="progress mb-3" role="progressbar" aria-label="Example with label" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar">0%</div>
+          </div>
+          <div class="progress mb-3" role="progressbar" aria-label="Success example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-marca w-25">25%</div>
+          </div>
+          <div class="progress mb-3" role="progressbar" aria-label="Success example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-marca--claro w-25">25%</div>
+          </div>
+          <div class="progress mb-3" role="progressbar" aria-label="Success example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-marca--oscuro w-25">25%</div>
+          </div>
+          <div class="progress mb-3" role="progressbar" aria-label="Success example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success w-25">25%</div>
+          </div>
+          <div class="progress mb-3" role="progressbar" aria-label="Info example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar text-bg-info w-50">50%</div>
+          </div>
+          <div class="progress mb-3" role="progressbar" aria-label="Warning example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar text-bg-warning w-75">75%</div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Danger example with label" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger w-100">100%</div>
+          </div>
+          <div class="progress-stacked">
+            <div class="progress" role="progressbar" aria-label="Segment one - default example" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Segment two - animated striped success example" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h3 class="text-primary"> Spinners </h3>
+        <div class="col-12 p-5">    
+          <div class="spinner-border text-marca" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-marca--oscuro" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-marca--claro" role="status"><span class="visually-hidden">Loading...      </span></div>
+          <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-danger" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-info" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-dark" role="status"><span class="visually-hidden">Loading...</span></div>
+        </div>
+        <div class="col-12 p-5">    
+          <div class="spinner-grow text-marca" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-marca--oscuro" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-marca--claro" role="status"><span class="visually-hidden">Loading...      </span></div>
+          <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-success" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-danger" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-info" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-light" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-dark" role="status"><span class="visually-hidden">Loading...</span></div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid text-white">
+      <div class="row"> 
+        <div class="col p3 bg-dark">
+          <div class="row">
+            <div class="col-md-2 offset-lg-1">
+              <p class="lead">Dirección 1 </p>
+              <div class="address">Ed. Bogotá  <br> Bogotá D.C Colombia  <br> Tel: +57 (1) 123 45678  <br> Código Postal 110010 <br></div>
+            </div>
+            <div class="col-md-2"> 
+              <p class="lead">Dirección 2</p>
+              <div class="address">Ed. Bogotá  <br> Bogotá D.C Colombia  <br> Tel: +57 (1) 123 45678  <br> Código Postal 110010 <br></div>
+            </div>
+            <div class="col-md-2"> 
+              <p class="lead">Dirección 3 </p>
+              <div class="address">Ed. Bogotá  <br> Bogotá D.C Colombia  <br> Tel: +57 (1) 123 45678  <br> Código Postal 110010 <br></div>
+            </div>
+            <div class="col-md-2"> 
+              <p class="lead">Dirección 4 </p>
+              <div class="address">Ed. Bogotá  <br> Bogotá D.C Colombia  <br> Tel: +57 (1) 123 45678  <br> Código Postal 110010 <br></div>
+            </div>
+            <nav class="col-md-3 border-start pl-2 pt-3"> 
+              <ul class="list-unstyled"> 
+                <li><a class="btn text-white text-start link-hover" href="contacto.html">Contacto </a></li>
+                <li> <a class="btn text-white text-start link-hover" href="#">link 1</a></li>
+                <li> <a class="btn text-white text-start link-hover" href="#">link 2</a></li>
+                <li> <a class="btn text-white text-start link-hover" href="#">link 3</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row border-bottom"> </div>
+          <div class="row">
+            <div class="col p-3 align-items-center bg-marca">
+              <div class="row"> 
+                <div class="col-md-1"> <img class="img-fluid" src="/dist/assets/img/logo-negativo.svg" alt="Logo empresa en negativo" style="height:50px"></div>
+                <div class="col-md-6">   
+                  <p>2021 Todos los derechos reservados &copy; Copyright Suempresa - Aquí la ciudad Colombia <br />  Web creada con y con y otra más - theme basado en Bootstrap - Íconos de Font Awesome y fuentes de Google Fonts</p>
+                </div>
+                <div class="col-md-2 text-end"> <span>Síguenos en redes sociales </span></div>
+                <div class="col-md-3">
+                  <div class="btn-group my-sm-1"><a class="btn btn-marca-oscuro ms-1" href="https://www.instagram.com/" title="Síguenos en Instagram"><span class="fa-brands fa-2x fa-instagram"> </span></a><a class="btn btn-marca-oscuro ms-1" href="https://linkedin.com" title="Síguenos en Linkedin"><span class="fa-brands fa-2x fa-linkedin"> </span></a></div>
+                  <div class="btn-group my-sm-1"> <a class="btn btn-marca-oscuro ms-1" href="https://www.facebook.com/" title="Síguenos en Facebook"> <span class="fa-brands fa-2x fa-facebook"> </span></a><a class="btn btn-marca-oscuro ms-1" href="https://twitter.com" title="Síguenos en Twitter"><span class="fa-brands fa-2x fa-twitter"> </span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts adicionales-->
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
