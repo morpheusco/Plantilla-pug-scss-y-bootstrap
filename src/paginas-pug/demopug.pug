@@ -8,15 +8,15 @@ append config
 block contenido
   section.container
     //- Ejemplo de cómo se usa el mixin para generar productos o servicios 
-    //- Para llamar al mixin usamos el nombre asignado y le pasamos los valores, en este caso es: imagen, alt_imagen, title_imagen, titulo_objeto, texto_objeto 
+    //- Para llamar al mixin usamos el nombre asignado y le pasamos los valores, en este caso es: imagen, alt_imagen, title_imagen, link, titulo_objeto, texto_objeto
     .row 
       h2.text-center.mt-3 Nuestros servicios <hr />
     .row 
-      +objetos-card('ejemplo1', 'descripción de la imagen 1', 'titulo de la imagen 1, genera su uso', 'Servicios 1', 'Aquí el texto del servicio no. 1') 
-      +objetos-card('ejemplo2', 'descripción de la imagen 2', 'titulo de la imagen 2, genera su uso', 'Servicios 2', 'Aquí el texto del servicio no. 2') 
-      +objetos-card('ejemplo3', 'descripción de la imagen 3', 'titulo de la imagen 3, genera su uso', 'Servicios 3', 'Aquí el texto del servicio no. 3') 
-      +objetos-card('ejemplo4', 'descripción de la imagen 4', 'titulo de la imagen 4, genera su uso', 'Servicios 4', 'Aquí el texto del servicio no. 4') 
-      +objetos-card('ejemplo5', 'descripción de la imagen 5', 'titulo de la imagen 5, genera su uso', 'Servicios 5', 'Aquí el texto del servicio no. 5') 
+      +objetos-card('ejemplo1', 'descripción de la imagen 1', 'titulo de la imagen 1, genera su uso','servicios1.html' ,  'Servicios 1', 'Aquí el texto del servicio no. 1') 
+      +objetos-card('ejemplo2', 'descripción de la imagen 2', 'titulo de la imagen 2, genera su uso','servicios2.html' ,  'Servicios 2', 'Aquí el texto del servicio no. 2') 
+      +objetos-card('ejemplo3', 'descripción de la imagen 3', 'titulo de la imagen 3, genera su uso','servicios3.html' ,  'Servicios 3', 'Aquí el texto del servicio no. 3') 
+      +objetos-card('ejemplo4', 'descripción de la imagen 4', 'titulo de la imagen 4, genera su uso','servicios4.html' ,  'Servicios 4', 'Aquí el texto del servicio no. 4') 
+      +objetos-card('ejemplo5', 'descripción de la imagen 5', 'titulo de la imagen 5, genera su uso','servicios5.html' ,  'Servicios 5', 'Aquí el texto del servicio no. 5') 
 
     // Usaré ahora un mixin de directorio con los parámetros dependencia, cargo, nombre, email, celular, telefono
     .row 

@@ -1,12 +1,11 @@
 //- Mixin para crear servicios u objetos tipo card en filas de 3 objetos por fila, las imágenes deben estar en el directorio objetos-card y formato JPG
-//- TODO: Configurar el link está en servicios1.html
-mixin objetos-card(imagen, alt_imagen, title_imagen, titulo_objeto, texto_objeto)
+mixin objetos-card(imagen, alt_imagen, title_imagen, link, titulo_objeto, texto_objeto)
   .col-12.col-sm-6.col-md-4.mb-4.mt-4
     .card.h-100
       img.card-img-top(src='/dist/assets/img/objetos-card/' + imagen + '.jpg' alt="Imagen de " + alt_imagen title="Imagen: " + title_imagen)
       .card-body
         h3.card-title
-          a.stretched-link.text-decoration-none(href="servicios1.html")= titulo_objeto
+          a.stretched-link.text-decoration-none(href=link )= titulo_objeto
         p.card-text= texto_objeto
 
 //- Mixin para crear varios tarjetas en directorio, debe tener previamente una envoltura tipo container o container fluid
