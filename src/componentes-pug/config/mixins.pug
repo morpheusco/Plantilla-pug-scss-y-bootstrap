@@ -2,7 +2,7 @@
 mixin objetos-card(imagen, alt_imagen, title_imagen, link, titulo_objeto, texto_objeto)
   .col-12.col-sm-6.col-md-4.mb-4.mt-4
     .card.h-100
-      img.card-img-top(src='/dist/assets/img/objetos-card/' + imagen + '.jpg' alt="Imagen de " + alt_imagen title="Imagen: " + title_imagen)
+      img.card-img-top(src='assets/img/objetos-card/' + imagen + '.jpg' alt="Imagen de " + alt_imagen title="Imagen: " + title_imagen)
       .card-body
         h3.card-title
           a.stretched-link.text-decoration-none(href=link )= titulo_objeto
